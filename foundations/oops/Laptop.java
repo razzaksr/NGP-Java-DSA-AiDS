@@ -52,14 +52,14 @@ public class Laptop {
     }
     @Override
     public String toString() {
-        return "Laptop [ram=" + ram + ", model=" + model + ", ssd=" + ssd + ", cost=" + cost + "]";
+        return "Laptop [ram=" + ram + ", model=" 
+        + model + ", ssd=" + ssd + ", cost=" + cost + "]";
     }
 }
 
 class ShopKeeper{
     public static void main(String[] args) {
         Laptop dell = new Laptop();
-        // dell.ram = 16;
         dell.setRam(16);
         dell.setCost(75000.00);
         dell.setModel("Dell Inspiron");
