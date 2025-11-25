@@ -34,7 +34,7 @@ public class Teller {
 
 class Account{
     private String accountHolderName;
-    private String accountNumber;
+    private long accountNumber;
     private double balance;
 
     public void findCharges(){
@@ -93,11 +93,11 @@ class Account{
         this.accountHolderName = accountHolderName;
     }
 
-    public String getAccountNumber() {
+    public long getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    public void setAccountNumber(long accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -112,7 +112,7 @@ class Account{
     public Account() {
     }
 
-    public Account(String accountHolderName, String accountNumber, double balance) {
+    public Account(String accountHolderName, long accountNumber, double balance) {
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountNumber;
         this.balance = balance;
