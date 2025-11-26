@@ -142,6 +142,51 @@ task:
 	Inherit All in the class APP 
 
 
+Specifiers and Modifiers:
+
+			class 			data member			member function
+
+public 		all over project		based on class scope	based on class scope
+private		member class		within class			within class
+static		member class		calling via classname	calling via classname
+final			cannot inherit		constant				cannot override
+default		package level		package level			package level
+protected		member class		accessible via inheritance
+							while out of package
+abstract		cannot instantiate	NA					need to override
+
+
+
+Exception Handling:
+	Error			>> compile time errors: syntax error, Case error	>> can be fixed
+				     run time errors: cannot be fixed
+	Exception		>> due to uncertain condition the code will be terminated abnormally
+					compile time/ checked >> need to handle at compile time in order to 						execute
+					usually raised when some of in built method are called/used by 						developers
+				     run time/ unchecked	>> raised due to user mistakes
+
+	Objective to handle the exception:
+		1. let the user to complete the process even though they make mistake
+		2. provide another chance
+
+	Handling:
+		1. try{
+			.. possible lines which cause exception
+		}catch(ExceptionClass obj){
+			// handling
+		}
+
+		2. throws
+
+
+		Throwable		>> interface
+			|
+		Exception			class>> java.lang
+			|
+		RuntimeException	class>> java.lang
+			|
+		NullPointerException	class>> java.lang
+
 
 
 
