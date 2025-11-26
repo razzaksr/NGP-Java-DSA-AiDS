@@ -1,0 +1,151 @@
+Objective of programming:
+	Data
+	Operations/ functions:
+		Create
+		Read 
+		Update
+		Delete
+
+
+Java Programming:
+	Desktop
+	Web
+	Mobile
+	
+System Design Engineer
+	Low level designer:
+		design architecture, algorithms, design patterns, ...
+
+
+Syntax:
+class IDENTIFIER{
+	public static void main(String[] identifier){
+	.....
+	}
+}	
+
+
+Java Development Kit >> Software DK
+	build(.java) compile >> source code >> byte code(ASCII+UNI)>> .class
+	Java Runtime Environment: in built classes grouped in packages
+		Execute
+		Java Virtual Machine:
+			byte code to machine code
+			
+Compile: source to bytecode
+	javac Filename.java
+Execute:	bytecode to machine
+	java Classname
+	
+
+
+https://github.com/razzaksr/NGP-Java-DSA-AiDS
+
+
+Scanner >> java.util
+	Scanner obj = new Scanner(System.in); >> object
+		nextInt	>> get int input from keyboard
+		nextFloat
+		nextDouble
+		nextShort
+		nextLong
+		nextBoolean
+		nextByte
+	String:	
+		next		>> word
+		nextLine	>> sentence
+
+
+
+
+Class has following members:
+	data member>> objects/ variables 				
+	member functions/ methods
+
+
+Object Oriented Programming:
+	Build the application with Security, Reusability
+
+	Class
+	Encapsulation:
+		private data
+		public function to access the private data
+
+	Constructor:
+		method/ function to be executed while creating an object
+		it has priority execution over the other functions
+		members initialization
+		name of the constructor same as class name
+	Polymorphism:
+		Overloading: within class same block to be created multiple times by changing parameters type, order, count 
+			constructor
+			function
+		Overriding: between two classes which involved in inheritance, which maintain same name, parameter
+
+	Inheritance: Enables Object reusability between classes
+		base/ super/ parent 
+		derived / child 
+
+		DerivedClass extends BaseClass
+
+	Abstraction:
+		interface like a class block:
+			members>> data members, member functions
+
+			class extends class
+			class implements interface
+			interface extends interface
+			interface cannot inherit class
+
+
+	
+
+
+
+
+
+task:
+employee
+1. check which TAX slab
+2. check eligibility of PL by check last 3/5 years ITR filed or not
+
+Upcasting & down casting
+
+Sealed and final
+
+Object Cloning:
+	1. implements Cloneable
+	2. override clone in derived class
+
+
+Wrapper classes: java.lang
+int >> Integer
+float>> Float
+double>> Double
+char>> Character
+boolean>> Boolean
+long>> Long
+short>> Short
+byte>> Byte
+
+	Abstract Class PRODUCTS contains array consists product cost such as 900,4500,200,1600 
+	methods:
+	1. Non abstract method: findBoundary(min, max) >> Now finding existing costs which matches user given boundary like min and max inside same class
+	2. Abstract method: findAll>> print all costs
+
+
+	interface SHORTLIST contains
+	1.Abstract method: findMax()>> Find max cost in that array, consider this method as abstract inside interface
+
+	Inherit All in the class APP 
+
+
+
+
+
+
+
+
+
+
+

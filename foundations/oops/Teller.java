@@ -6,7 +6,7 @@ public class Teller {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        Account account1 = new Account("John Doe", "123456789", 1000.0);
+        Account account1 = new Account("John Doe", 123456789L, 1000.0);
         System.out.println("Tell us what you wish to do");
         System.out.println("Deposit\nWithdraw\nFind Charges\nany to exit");
         String option = scan.next();
@@ -32,10 +32,19 @@ public class Teller {
     }
 }
 
-class Account{
+class Account implements Cloneable {
     private String accountHolderName;
     private long accountNumber;
     private double balance;
+
+    
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // TODO Auto-generated method stub
+        Account cloned = (Account) super.clone();// down casting
+        return cloned;
+    }
 
     public void findCharges(){
         Scanner scan = new Scanner(System.in);
