@@ -90,6 +90,37 @@ public class Patterns {
             System.out.println();
         }
     }
+    public void hallowX(int limit){
+        // rows
+        for(int row = 1; row <= limit; row++){
+            // columns
+            for(int column = 1; column <= limit; column++){
+                if(column == row || column == (limit - row + 1)){
+                    System.out.print("#");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public void nameInHashPattern(String name){
+        int limit = name.length();
+        // rows
+        for(int row = 1; row <= limit; row++){
+            // columns
+            for(int column = 1; column <= limit; column++){
+                if(row == 1 || row == limit || column == 1 || column == limit){
+                    System.out.print("#");
+                } else if(row == (limit/2 + 1)){
+                    System.out.print(name.charAt(column - 1));
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         Patterns patterns = new Patterns();
         Scanner scan = new Scanner(System.in);
@@ -102,7 +133,9 @@ public class Patterns {
         // patterns.leftUpperFloyd(limit);
         // patterns.rightUpperFloyd(limit);
         // patterns.upperPyramid(limit);
-        patterns.sandClock(limit);
+        // patterns.sandClock(limit);
+        // patterns.hallowX(limit);
+        patterns.nameInHashPattern("RAZAK");
         scan.close();
     }
 }

@@ -202,7 +202,7 @@ Type parsing:
 	single try multi catch
 	infinite and finite amount of chances
 	exception forwarding via throw keyword
-	Custom exception creation>> eg: invlaid aadhaar when its not equal to the length of 12
+	Custom exception creation>> eg: invalid aadhaar when its not equal to the length of 12
 
 
 Loop:
@@ -214,6 +214,32 @@ Patterns:
 	upper pyramid
 	sand clock
 
+	Generics:
+		class, method, interface, object
+		eg: CRUD Operations
+
+
+Collection framework: java.util
+	Iterable	>> interface
+	|
+	Collections>>
+	|
+	Collection
+	|
+	List, Set, Map
+
+
+List: ArrayList, Vector, LinkedList, Stack
+Set: HashSet, TreeSet, LinkedHashSet
+Map: HashMap, TreeMap, Hashtable
 
 
 
+
+
+Drawbacks of array:
+	No inbuilt methods
+	fixed size
+	fixed type
+	compile time
+	not secure
