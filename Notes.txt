@@ -119,14 +119,14 @@ Object Cloning:
 
 
 Wrapper classes: java.lang
-int >> Integer
-float>> Float
-double>> Double
-char>> Character
-boolean>> Boolean
-long>> Long
-short>> Short
-byte>> Byte
+int(4) >> Integer
+float(4)>> Float
+double(8)>> Double
+char(2)>> Character
+boolean(1nibble/4bit)>> Boolean
+long(8)>> Long
+short(2)>> Short
+byte(1)>> Byte
 
 
 task:
@@ -188,7 +188,21 @@ Exception Handling:
 		NullPointerException	class>> java.lang
 
 
+Type parsing:
+	Convert String into Other types via its wrapper class
+		WrapperClass.parseType(string)
+	eg: converting string into int
+		Integer.parseInt(string)
+		String hi="78"; String hello="89!"
+	NumberFormatException
+	
 
+	ExceptionChain
+	NestedException
+	single try multi catch
+	infinite and finite amount of chances
+	exception forwarding via throw keyword
+	Custom exception creation>> eg: invlaid aadhaar when its not equal to the length of 12
 
 
 
