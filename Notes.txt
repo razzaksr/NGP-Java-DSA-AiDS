@@ -205,7 +205,14 @@ Type parsing:
 	Custom exception creation>> eg: invlaid aadhaar when its not equal to the length of 12
 
 
-
+Loop:
+Nested loop in real time scenario>> ticket booking for multiple busses, giant wheel
+Patterns:
+	square
+	left upper floyd/triangle
+	right upper floyd/triangle
+	upper pyramid
+	sand clock
 
 
 
