@@ -230,10 +230,13 @@ Collection framework: java.util
 
 
 List: ArrayList, Vector, LinkedList, Stack
+Collections >> sort, replaceAll, reverse
+Comparator
+	
+
+Queue: PriorityQueue, Deque
 Set: HashSet, TreeSet, LinkedHashSet
 Map: HashMap, TreeMap, Hashtable
-
-
 
 
 
