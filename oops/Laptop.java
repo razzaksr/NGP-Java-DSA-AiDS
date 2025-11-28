@@ -1,10 +1,14 @@
 package oops;
 
-public class Laptop {
-    private int ram;
+public class Laptop implements Comparable<Laptop> {
+    private Integer ram;
     private String model; // setModel
-    private int ssd;// setSsd
-    private double cost;// serCost
+    private Integer ssd;// setSsd
+    private Double cost;// serCost
+    @Override
+    public int compareTo(Laptop o) {
+        return this.cost.compareTo(o.cost);
+    }
     // setter methods
     // public void setMemberName(datatype var){this.member = var;}
     public void setRam(int tempRam){

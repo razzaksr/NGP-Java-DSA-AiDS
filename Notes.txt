@@ -229,14 +229,25 @@ Collection framework: java.util
 	List, Set, Map
 
 
-List: ArrayList, Vector, LinkedList, Stack
+List: duplicates allowed, positions available
+ArrayList, Vector, LinkedList, Stack
 Collections >> sort, replaceAll, reverse
 Comparator
 	
-
 Queue: PriorityQueue, Deque
-Set: HashSet, TreeSet, LinkedHashSet
-Map: HashMap, TreeMap, Hashtable
+
+Set: No duplicates, no position
+HashSet
+TreeSet 
+LinkedHashSet
+
+Comparable
+
+Map: <KeyClass,ValueClass>, where Key Objects must be duplicated, values can be
+
+HashMap, TreeMap, Hashtable
+
+
 
 
 
