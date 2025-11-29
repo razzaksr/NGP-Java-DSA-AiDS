@@ -11,6 +11,7 @@ public class ExecuteAbstraction extends Organization {
         org.viewAll();
     }
 
+    // O(n) since linearly check for the 7.5 to update
     @Override
     public void increment() {
         // TODO Auto-generated method stub
@@ -24,6 +25,7 @@ public class ExecuteAbstraction extends Organization {
 abstract class Organization{
     Double[] salary = {4.5,9.2,12.5,7.8};// in lakhs
     // non abstract method
+    // O(1)
     public void viewAll(){
         System.out.println(Arrays.toString(salary));
     }

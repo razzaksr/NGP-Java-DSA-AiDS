@@ -37,6 +37,7 @@ class Service<T> implements Operations<T>{
     public Service(int size){
         storage = (T[]) new Object[size];
     }
+    // O(n) linear check for null
     @Override
     public void save(T value) {
         for(int index = 0; index < storage.length; index++){
@@ -48,10 +49,13 @@ class Service<T> implements Operations<T>{
         }
         System.out.println("Storage is full, cannot save " + value);
     }
+    // O(1) since toString called
+    // O(n) if read operation would have done by linear/loop
     @Override
     public void findAll() {
         System.out.println(Arrays.toString(storage));
     }
+    // O(1) since index not checked via linear/loop
     @Override
     public void update(int index, T newValue) {
         if(index >= 0 && index < storage.length){
@@ -62,6 +66,7 @@ class Service<T> implements Operations<T>{
             System.out.println("Invalid index: " + index);
         }
     }
+    // O(1) since index not checked via loop
     @Override
     public T deleteByIndex(int index) {
         if(index >= 0 && index < storage.length){

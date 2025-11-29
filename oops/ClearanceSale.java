@@ -6,6 +6,7 @@ public class ClearanceSale {
     public static void main(String[] args) {
         int stock = 100, invoice = 0, days = 3;
         Scanner scan = new Scanner(System.in);
+        // O(n)
         while(stock>0&&days>0){
             System.out.println("Enter the quantity to purchase: ");
             int quantity = scan.nextInt();

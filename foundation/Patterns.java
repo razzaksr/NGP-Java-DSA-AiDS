@@ -3,6 +3,7 @@ package foundation;
 import java.util.Scanner;
 
 public class Patterns {
+    // O(n2)
     public void perfectSqaure(String name){
         System.out.println("Your perfect square pattern is ");
         int limit = name.length();
@@ -25,6 +26,7 @@ public class Patterns {
             System.out.println();
         }
     }
+    // O(n2)
     public void leftUpperFloyd(int limit){
         // rows
         for(int row = 1; row <= limit; row++){
@@ -35,6 +37,7 @@ public class Patterns {
             System.out.println();
         }
     }
+    // 
     public void rightUpperFloyd(int limit){
         // rows
         for(int row = 1; row <= limit; row++){
