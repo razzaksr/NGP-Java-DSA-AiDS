@@ -448,7 +448,15 @@ Queue:
 
 
 
-
+Non linear structure:
+Tree
+Binary Tree:
+	CRUD, Traversals
+	Diameter
+	Max Path Sum
+Binary Search Tree:
+	Insertion
+	Level Order Traversal
 
 
 
