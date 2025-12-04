@@ -458,6 +458,25 @@ Binary Search Tree:
 	Insertion
 	Level Order Traversal
 
+AVL Tree:
+	Self/ height balanced Binary search tree
+	eg: folder creation/deletion in any location of computer automatically align based on name(self align)
+	balancing done via balance factor:
+		balance factor should -1,0,+1
+		balance factor = height of left - height of right
+
+	Self balancing done by performing any of following required rotation:
+		1. left rotation when right right insertion
+		2. right rotation when left left insertion
+		3. left right rotation when left right insertion
+		4. right left rotation when right left insertion
+
+
+
+
+
+
+
 
 
 
