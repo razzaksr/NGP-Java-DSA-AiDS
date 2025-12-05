@@ -472,9 +472,20 @@ AVL Tree:
 		4. right left rotation when right left insertion
 
 
+Segment Tree:
+	Range Queries such as sum, min, max
 
 
+int[] arr={2, 5, 1, 4, 9, 3}
+n=6
+size, arr[],  sumsTree[n*4]
 
+
+2 5 1 4 9 3
+0 1 2 3 4 5
+
+1=node
+s=0, e=5
 
 
 
