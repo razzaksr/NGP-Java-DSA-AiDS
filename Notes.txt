@@ -488,6 +488,62 @@ size, arr[],  sumsTree[n*4]
 s=0, e=5
 
 
+Fenwick Tree/ Binary Indexed Tee:
+ 	prefix operations>> prefixSum, prefixMin....
+
+2 5 1 4 9 3		size = 6		0 index based
+0 1 2 3 4 5
+
+BIT 	size = 7		1 index based
+ 0 0 0 0 0 0 0
+
+arr[0] = 2, index=1 in BIT
+next possible index to add arr[0]>> 
+ 0 2 0 0 0 0 0
+index + (index & -index)
+1 + (1&-1)	= 2  >> add arr[0] in index 2
+ 0 2 2 0 0 0 0
+2 + (2&-2)  = 4 >> add arr[0] in index 4
+ 0 2 2 0 2 0 0
+
+arr[1] = 5, index=2 in BIT
+ 0 2 7 0 2 0 0
+2+(2&-2)	= 4>> add arr[1] in index 4
+ 0 2 7 0 7 0 0
+
+arr[2] =1, index = 3 in BIT
+add arr[2] in index 3
+ 0 2 7 1 7 0 0
+3+(3&-3) = 4 add arr[2] in index 4
+ 0 2 7 1 8 0 0
+
+arr[3]=4, index = 4 in BIT
+add arr[3] in index 4
+ 0, 2, 7, 1, 12, 0, 0
+
+arr[4]=9, index = 5 in BIT
+add arr[4] in index 5
+ 0, 2, 7, 1, 12, 9, 0
+next>> poss 
+5+(5&-5) >> 6, add arr[4] in index 6 of BIT
+ 0, 2, 7, 1, 12, 9, 9
+
+arr[5]=3, index=6 in BIT
+add arr[5] in index 6
+ 0, 2, 7, 1, 12, 9, 12
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
