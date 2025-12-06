@@ -535,11 +535,29 @@ add arr[5] in index 6
 
 
 
+Graph:
+	Edge;
+	Vertex;
 
+types:
+	weighted
+	unweighted
+	direct
+	undirect
+	cyclic
+	acyclic
+	
 
+Graph representation:
+	adjacency matrix
+	adjacency List
+	adjacency Map
 
+Implementation of BFS, DFS
 
+Finding Degree
 
+	
 
 
 
