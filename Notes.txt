@@ -647,9 +647,83 @@ queue [5]
 .
 .
 
+Shortest Path Algorithms:
+	DiJkstra
+	Bellman ford
+	
+Dijkstra:
+Adjacency:
+	0->1      	9
+	0->2     	6
+	0->3		5
+	0->4		3
+	2->1		2
+	2->3		4
+
+distance[5]>> 0 to 4
+dis=[0,inf,inf,inf,inf]
+pq=[(0,0)] >> (vertex,weight)
+poll from pq
+traverse over neighbor
+update distance and offer to pq
+
+vertex=0, distance=0
+0 -> 1 >> 9
+dist[0]+9 >> 9 
+dist[1]> inf
+dist[0]+9 < dist[1]
+update dist[1] = 9
+push (1,9)
+dis=[0,9,inf,inf,inf]
+
+nei 0->2  >>  6
+0+6 < inf
+dist[2] = 6
+dis=[0,9,6,inf,inf]
+pq push (2,6)
+
+
+nei 0 -> 3		5
+0+5 < inf
+dist[3] = 5
+push (3,5)
+
+nei 	0->4		3
+0+3 < inf
+dist[4] = 3
+push (4,3)
+
+pq = [ (1,9)(2,6)(3,5)(4,3) ]
+pq = [ (4,3)(3,5)(2,6)(1,9) ]
+dist=[0,9,6,5,3]
 
 
 
+polled (4,3)
+
+polled (3,5)
+
+
+polled 	2,6
+nei 2->1	2
+dist[2]+2	>> 6+2>> 8
+dist[1]>> 9
+8<9	
+dist[1] = 8
+push (1,8)
+
+nei 2->3		4
+dist[2] + 4 < dist[3]
+6+4>> 10 < 5
+no update 
+no push
+
+dist=[0,8,6,5,3]
+pq = [ (1,8)(1,9) ]
+
+no neighbors for 1
+
+dist=[0,8,6,5,3]>> final result
 
 
 
