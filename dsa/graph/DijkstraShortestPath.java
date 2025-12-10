@@ -21,7 +21,7 @@ class NearBy{
     }
     @Override
     public String toString() {
-        return "NearBy [neighbor=" + neighbor + ", weight=" + weight + "]";
+        return "NearBy [neighbor=" + neighbor + ", weight=" + weight + "]\n";
     }
 }
 public class DijkstraShortestPath {
