@@ -912,3 +912,60 @@ Sample Input:
 
 	90, 40, 20, 10, 4
 	Best time to buy 10 best time to sell 4
+
+
+
+
+
+
+
+
+
+Longest Consecutive Sequence, Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+You must write an algorithm that runs in O(n) time.
+Example 1:
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+Example 2:
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
+
+Example 3:
+Input: nums = [1,0,1,2]
+Output: 3
+
+
+
+
+		Group Anagrams
+		Problem Statement:
+		Cluster search queries or user aliases that are scrambled versions of each other — useful in NLP or 		search optimization.
+		Sample Input:
+		strs = ["eat","tea","tan","ate","nat","bat"]
+		Expected Output:
+		[["eat","tea","ate"], ["tan","nat"], ["bat"]]
+
+
+
+Minimum Moves to Convert String
+You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+		Example 1:
+		Input: s = "XXX"
+		Output: 1	
+		Explanation: XXX -> OOO
+		We select all the 3 characters and convert them in one move.
+		Example 2:
+		Input: s = "XXOX"
+		Output: 2
+		Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+		Example 3:
+		Input: s = "OOOO"
+		Output: 0
+Explanation: There are no 'X's in s to convert.
+

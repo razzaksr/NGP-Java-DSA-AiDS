@@ -24,12 +24,31 @@ public class StockAnalysis {
             System.out.println("Buying @ "+buy+" selling @ "+sell);
         }
     }
+    public static void bestTime(int[] arr){
+        if(arr.length<2) return;
+        int currentBuy = arr[0], currentSell = arr[1];
+        int maxProfit = currentSell - currentBuy;
+        int currentProfit = Integer.MIN_VALUE;
+        for(int index = 1; index<arr.length;index++){
+            currentProfit = arr[index]-currentBuy;
+            if(currentProfit>maxProfit){
+                maxProfit = currentProfit;
+                currentSell = arr[index];
+            }
+            if(currentBuy>arr[index]) 
+                currentBuy = arr[index];
+        }
+        System.out.println("Buy @ "+(currentSell-maxProfit)
+        +" sell @ "+currentSell);
+    }
     public static void main(String[] args) {
-        List<Integer> stk = Arrays.asList( 7, 1, 5, 3, 6, 4);
-        mahisha(stk);
-        stk = Arrays.asList(90, 40, 20, 10, 4);
-        mahisha(stk);
-        stk = Arrays.asList(-10, -5, -2, -1, 1);
-        mahisha(stk);
+        int[] stk = {7, 1, 5, 3, 6, 4};
+        bestTime(stk);
+        stk = new int[]{90, 40, 20, 10, 4};
+        bestTime(stk);
+        stk = new int[]{-10, -5, -2, -1, 1};
+        bestTime(stk);
+        stk = new int[]{10,6,4,8,2};
+        bestTime(stk);
     }
 }
