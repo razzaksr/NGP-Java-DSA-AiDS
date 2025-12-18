@@ -1,4 +1,4 @@
-package arrays;
+package twopointer;
 
 public class TrappingRainWaterViaTP {
     public static void main(String[] args) {
