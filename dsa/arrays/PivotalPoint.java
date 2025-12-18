@@ -6,8 +6,7 @@ public class PivotalPoint {
     public static int find(int[] arr){
         int preSum = 0;
         for(int index = 0;index < arr.length;index++){
-            int[] subArray = Arrays.copyOfRange
-            (arr, index+1, arr.length);
+            int[] subArray = Arrays.copyOfRange(arr, index+1, arr.length);
             int postSum = Arrays.stream(subArray).sum();
             if(preSum == postSum) return index;
             preSum += arr[index];
