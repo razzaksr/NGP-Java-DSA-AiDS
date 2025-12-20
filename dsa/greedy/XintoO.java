@@ -1,4 +1,4 @@
-package arrays;
+package greedy;
 
 public class XintoO {
     public static int discoverCount(String board){
