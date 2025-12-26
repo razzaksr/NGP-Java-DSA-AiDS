@@ -1086,27 +1086,6 @@ End: returns -1 because we’re stuck at index 3 and cannot move forward to reac
 Output: -1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 1. Non-overlapping Intervals, Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 Note that intervals which only touch at a point are non-overlapping. For example, [1, 2] and [2, 3] are non-overlapping.
 
@@ -1152,3 +1131,40 @@ Constraints:
 1 <= hand.length <= 104
 0 <= hand[i] <= 109
 1 <= groupSize <= hand.length
+
+Divide and Conquer:
+Merge sort
+Quick Sort
+Binary Search
+
+Ternary Search
+3 portions
+
+mid1	>> start+(end-start)/3
+mid2>> end-(end-start)/3
+
+check user with mid1
+check user with mid2
+
+portion1
+user < mid1 		>>  end = mid1-1
+portion3
+user > mid2 		>>  start=mid2+1
+portion2
+start = mid1+1
+end=mid2-1
+
+Find Sum of Array using Divide and conquer:
+
+Prefix Sum Via Divide and conquer:
+Example 1:
+[1, 2, 3, 4]
+Prefix Sum: [1, 3, 6, 10]
+Exmaple 2:
+[5, 10, 15, 20, 25]
+Prefix Sum: [5, 15, 30, 50, 75]
+Exmple 3:
+[3, 1, 4, 1, 5, 9]
+Prefix Sum: [3, 4, 8, 9, 14, 23]
+
+
