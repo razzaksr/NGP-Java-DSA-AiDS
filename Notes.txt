@@ -1342,3 +1342,63 @@ m == grid.length
 n == grid[i].length
 1 <= m, n <= 200
 0 <= grid[i][j] <= 200
+
+
+
+Low Level Design:
+
+	CRS >> Business
+	FRS >> Design >> System Design Engineer
+		HLD >> Front end, ui
+		LLD >> back end, coding
+
+
+LLD Contains Components which has to be followedby all modules
+
+
+Data	>> temp (array, collection), perm (File, Database)
+DAO	>> connecting data>> interface
+Service>> implementation
+API		>> controller
+CLI		>> interface
+
+
+
+College Bus
+Entity/ bean:
+	regno
+	routeid
+	stops
+	students
+	drivername
+	contact
+Functionalities:
+	assign>> create	>> regex
+	view		>> one, all
+	update
+	delete
+CLI: menu driven
+
+
+Insurance
+	schemeName
+	schemeType
+	schemeDuration
+	policyPremium
+	insuranceValue
+	returnOfInterest
+	
+
+Functionality
+introduce
+cancel
+modify
+listAll
+
+
+
+
+
+
+
+
