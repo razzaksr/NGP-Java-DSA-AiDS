@@ -1,12 +1,14 @@
 package lld;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class CollegeBus {
+public class CollegeBus implements Serializable {
     private String regNo;
     private int routeId;
-    private List<String> stops;
-    private List<String> students;
+    private List<String> stops = new ArrayList<>();
+    private List<String> students = new ArrayList<>();
     private String driverName;
     private long contact;
     @Override
